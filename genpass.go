@@ -22,7 +22,7 @@ const (
 // Generate generates a random password of the specified length using the given
 // charset. It chooses cryptographically secure random numbers to select
 // characters from the charset.
-func Generate(charset string, length int) string {
+func Generate(length int, charset string) string {
 	chars := []rune(charset)
 	slices.Sort(chars)
 

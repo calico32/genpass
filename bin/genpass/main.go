@@ -94,7 +94,7 @@ func main() {
 	}
 
 	charset = genpass.NormalizeCharset(charset)
-	password := genpass.Generate(charset, length)
+	password := genpass.Generate(length, charset)
 
 	fmt.Println(string(password))
 
